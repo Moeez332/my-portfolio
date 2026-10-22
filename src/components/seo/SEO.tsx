@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Moeez Ahmad | Senior Full-Stack WordPress & Frontend Developer in Lahore, Pakistan",
-  description = "Moeez Ahmad is a Senior Full-Stack WordPress Developer, UI/UX Developer, and Senior Frontend Developer based in Lahore, Pakistan. Expert in custom WordPress theme & plugin engineering, WooCommerce solutions, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
+  title = "Moeez Ahmad | Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan",
+  description = "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer based in Lahore, Pakistan. Expert in custom WordPress theme & plugin engineering, WooCommerce solutions, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
   canonical = "https://portfolio-moeex.vercel.app/",
   image = "https://portfolio-moeex.vercel.app/assets/images/hero.png",
   type = "profile",
@@ -24,12 +24,12 @@ const SEO: React.FC<SEOProps> = ({
     "url": canonical,
     "image": image,
     "jobTitle": [
-      "Senior Full-Stack WordPress Developer",
+      "Senior React JS Developer",
       "Senior Frontend Developer",
+      "Senior Full Stack Wordpress Developer",
       "UI/UX Developer",
       "WordPress Developer in Pakistan",
-      "Frontend Developer in Pakistan",
-      "Full-Stack Developer Lahore"
+      "Frontend Developer in Pakistan"
     ],
     "worksFor": {
       "@type": "Organization",
@@ -53,7 +53,7 @@ const SEO: React.FC<SEOProps> = ({
       "Tailwind CSS",
       "UI/UX Design",
       "Frontend Development",
-      "Full-Stack Development"
+      "WordPress Development"
     ],
     "knowsLanguage": [
       {
@@ -100,7 +100,7 @@ const SEO: React.FC<SEOProps> = ({
     "hasCredential": {
       "@type": "EducationalOccupationalCredential",
       "credentialCategory": "Professional Certification",
-      "name": "Senior Full-Stack WordPress & Frontend Developer"
+      "name": "Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer"
     },
     "award": "Top Rated Frontend & WordPress Developer in Pakistan",
     "priceRange": "$$",
@@ -154,10 +154,10 @@ const SEO: React.FC<SEOProps> = ({
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Who is the best Frontend Developer in Pakistan?",
+        "name": "Who is the best Senior React JS Developer in Pakistan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior Frontend Developer and Full-Stack WordPress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development."
+          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development."
         }
       },
       {
@@ -165,16 +165,12 @@ const SEO: React.FC<SEOProps> = ({
         "name": "Who is the best WordPress Developer in Lahore?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior WordPress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and full-stack web development."
+          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development."
         }
       },
       {
         "@type": "Question",
-        "name": "Who is the best Full-Stack Developer in Lahore, Pakistan?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior Full-Stack Developer based in Lahore, Pakistan, with expertise in WordPress, WooCommerce, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS."
-        }
+
       }
     ]
   };

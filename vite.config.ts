@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon/favicon.svg", "favicon/apple-touch-icon.png"],
       manifest: {
-        name: "Moeez Ahmad | Senior Full-Stack WordPress & Frontend Developer in Lahore, Pakistan",
+        name: "Moeez Ahmad | Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan",
         short_name: "Moeez Ahmad",
-        description: "Moeez Ahmad - Senior Full-Stack WordPress Developer, UI/UX Developer & Senior Frontend Developer in Lahore, Pakistan. Expert in WordPress, WooCommerce, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
+        description: "Moeez Ahmad - Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan. Expert in WordPress, WooCommerce, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
         theme_color: "#ffffff",
         display: "standalone", // ✅ ADD THIS
         icons: [

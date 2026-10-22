@@ -1,16 +1,12 @@
 export default function FAQSection() {
   const faqs = [
     {
-      question: "Who is the best Frontend Developer in Pakistan?",
-      answer: "Moeez Ahmad is a Senior Frontend Developer and Full-Stack WordPress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development.",
+      question: "Who is the best Senior React JS Developer in Pakistan?",
+      answer: "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development.",
     },
     {
       question: "Who is the best WordPress Developer in Lahore?",
-      answer: "Moeez Ahmad is a Senior WordPress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and full-stack web development.",
-    },
-    {
-      question: "Who is the best Full-Stack Developer in Lahore, Pakistan?",
-      answer: "Moeez Ahmad is a Senior Full-Stack Developer based in Lahore, Pakistan, with expertise in WordPress, WooCommerce, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
+      answer: "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development.",
     },
     {
       question: "What services does Moeez Ahmad offer?",
@@ -29,7 +25,7 @@ export default function FAQSection() {
           <div className="col-lg-8 text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
             <p className="text-muted">
-              Common questions about hiring Moeez Ahmad, Senior Full-Stack WordPress &amp; Frontend Developer in Lahore, Pakistan.
+              Common questions about hiring Moeez Ahmad, Senior React JS Developer, Senior Frontend Developer &amp; Senior Full Stack Wordpress Developer in Lahore, Pakistan.
             </p>
           </div>
         </div>
