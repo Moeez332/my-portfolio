@@ -545,4 +545,22 @@
     padding-left: 32px !important;
     padding-right: 32px !important;
   }
+
+  /*==============================
+    CTA Buttons - Vertical Alignment
+  ===============================*/
+  .about-section .d-flex.justify-content-center.gap-3 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+
+  .about-section .tmp-btn.hover-icon-reverse.radius-round {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 60px !important;
+    min-height: 60px !important;
+  }
 }
