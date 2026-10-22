@@ -65,6 +65,18 @@ export default function Hero({ isLight = false }) {
                       </span>
                     </span>
                   </a>
+                  <a
+                    className="tmp-btn hover-icon-reverse radius-round"
+                    href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
+                    download
+                  >
+                    <span className="icon-reverse-wrapper">
+                      <span className="btn-text">Download CV</span>
+                      <span className="btn-icon">
+                        <i className="fa-regular fa-file-pdf" />
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

@@ -60,6 +60,16 @@ export default function MobileOnePageHeader({
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                className="d-block py-2 download-cv-btn-mobile"
+                href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
+                download
+                onClick={() => setIsOpen(false)}
+              >
+                <i className="fa-regular fa-file-pdf me-2" /> Download CV
+              </a>
+            </li>
           </ul>
         </nav>
       )}

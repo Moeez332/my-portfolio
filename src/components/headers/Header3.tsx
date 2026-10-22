@@ -61,6 +61,13 @@ export default function Header3({
                 ))}
               </div>
             </div>
+            <a
+              className="download-cv-btn"
+              href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
+              download
+            >
+              <i className="fa-regular fa-file-pdf" /> Download CV
+            </a>
           </div>
         </div>
       </header>
