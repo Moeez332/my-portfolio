@@ -1,12 +1,36 @@
 export default function FAQSection() {
   const faqs = [
     {
-      question: "Who is the best Senior React JS Developer in Pakistan?",
-      answer: "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development.",
+      question: "Why should I hire you?",
+      answer: "I am a Senior React JS Developer and WordPress Expert with deep experience in building high-performance, scalable web applications and e-commerce stores. I deliver pixel-perfect, SEO-friendly, and conversion-optimized digital products for clients worldwide.",
     },
     {
-      question: "Who is the best WordPress Developer in Lahore?",
-      answer: "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development.",
+      question: "What technologies do you specialize in?",
+      answer: "I specialize in React JS, Next.js, TypeScript, JavaScript, WordPress, WooCommerce, Shopify, Tailwind CSS, PHP, and Node.js. I build modern, responsive, and performance-optimized websites and web applications.",
+    },
+    {
+      question: "Do you build custom WordPress websites?",
+      answer: "Yes, I develop custom WordPress themes and plugins tailored to your business needs. From theme engineering to WooCommerce solutions, I deliver secure, scalable, and SEO-friendly WordPress websites.",
+    },
+    {
+      question: "Can you develop Shopify stores?",
+      answer: "Yes, I build and customize Shopify stores with responsive design, performance optimization, and seamless user experience to help you sell more online.",
+    },
+    {
+      question: "Do you build React and Next.js applications?",
+      answer: "Absolutely. I build modern React JS and Next.js applications with TypeScript, focusing on performance, responsiveness, and SEO-friendly architecture for a great user experience.",
+    },
+    {
+      question: "Are you available for freelance projects?",
+      answer: "Yes, I am available for freelance projects. Feel free to reach out with your requirements, and let's discuss how I can help bring your vision to life.",
+    },
+    {
+      question: "Do you work with international clients?",
+      answer: "Yes, I work with clients worldwide. Communication and collaboration are handled remotely through email, video calls, and project management tools.",
+    },
+    {
+      question: "Can you optimize website performance?",
+      answer: "Yes, I specialize in performance optimization including Core Web Vitals improvement, code optimization, image compression, and caching strategies to make your website load faster.",
     },
   ];
 
@@ -15,29 +39,50 @@ export default function FAQSection() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center mb-5">
-            <div className="section-title mb-5">
-              <h2 id="faq-heading" className="tmp-section-title">
+            <div className="section-head">
+              <div className="section-sub-title">
+                <span className="subtitle">FAQ</span>
+              </div>
+              <h2 id="faq-heading" className="title mb-4">
                 Frequently Asked Questions
-                <span className="section-sub-title">Common questions about hiring Moeez Ahmad</span>
               </h2>
+              <p className="description">
+                Everything you need to know before hiring me.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-10 mx-auto">
-            {faqs.map((faq, index) => (
-              <div key={index} className="faq-item mb-4 p-4 rounded border">
-                <div style={{ background: "var(--background-color-3)", border: "1px solid var(--color-border)", borderRadius: "8px", padding: "20px" }}>
-                  <h3 className="h5 fw-bold mb-2" style={{ color: "var(--color-heading)" }}>
-                    {faq.question}
-                  </h3>
-                  <p className="mb-0" style={{ color: "var(--color-body)", lineHeight: "1.7" }}>
-                    {faq.answer}
-                  </p>
+            <div className="accordion" id="faqAccordion">
+              {faqs.map((faq, index) => (
+                <div key={index} className="accordion-item">
+                  <h2 className="accordion-header" id={`faq-heading-${index}`}>
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#faq-collapse-${index}`}
+                      aria-expanded="false"
+                      aria-controls={`faq-collapse-${index}`}
+                    >
+                      {faq.question}
+                    </button>
+                  </h2>
+                  <div
+                    id={`faq-collapse-${index}`}
+                    className="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                    aria-labelledby={`faq-heading-${index}`}
+                  >
+                    <div className="accordion-body">
+                      {faq.answer}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

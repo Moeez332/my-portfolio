@@ -4,27 +4,42 @@ export default function AboutSection() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
-            <div className="section-title mb-5">
-              <h2 id="about-heading" className="tmp-section-title">
-                About Me
-                <span className="section-sub-title">Senior React JS Developer &amp; WordPress Expert</span>
+            <div className="section-head mb-5">
+              <div className="section-sub-title">
+                <span className="subtitle">ABOUT ME</span>
+              </div>
+              <h2 id="about-heading" className="title mb-4">
+                Senior React JS Developer &amp; WordPress Expert
               </h2>
+              <p className="description">
+                I am Moeez Ahmad, a Senior React JS Developer based in Lahore, Pakistan.
+                I specialize in building high-performance, scalable web applications and
+                e-commerce stores for clients worldwide.
+              </p>
             </div>
 
-            <p className="lead mb-4" style={{ color: "var(--color-body)", fontSize: "18px", lineHeight: "1.8" }}>
-              I am <strong>Moeez Ahmad</strong>, a <strong>Senior React JS Developer</strong>,
-              <strong>Senior Frontend Developer</strong>, and <strong>Senior Full-Stack WordPress Developer</strong>
-              based in <strong>Lahore, Pakistan</strong>. I specialize in building high-performance,
-              scalable web applications and e-commerce stores for clients worldwide.
-            </p>
+            <div className="about-details mt-5">
+              <p className="mb-4" style={{ color: "var(--color-body)", lineHeight: "1.8" }}>
+                With deep expertise in <strong>custom WordPress theme &amp; plugin engineering</strong>,
+                <strong>WooCommerce solutions</strong>, <strong>React.js</strong>, <strong>Next.js</strong>,
+                <strong>PHP</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, and
+                <strong>Tailwind CSS</strong>, I deliver pixel-perfect, SEO-friendly, and
+                conversion-optimized digital products.
+              </p>
 
-            <p className="mb-5" style={{ color: "var(--color-body)", fontSize: "16px", lineHeight: "1.8" }}>
-              With deep expertise in <strong>custom WordPress theme &amp; plugin engineering</strong>,
-              <strong>WooCommerce solutions</strong>, <strong>React.js</strong>, <strong>Next.js</strong>,
-              <strong>PHP</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, and
-              <strong>Tailwind CSS</strong>, I deliver pixel-perfect, SEO-friendly, and conversion-optimized
-              digital products.
-            </p>
+              <div className="tech-list d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <span className="badge bg-secondary">React JS</span>
+                <span className="badge bg-secondary">Next JS</span>
+                <span className="badge bg-secondary">TypeScript</span>
+                <span className="badge bg-secondary">JavaScript</span>
+                <span className="badge bg-secondary">WordPress</span>
+                <span className="badge bg-secondary">WooCommerce</span>
+                <span className="badge bg-secondary">Shopify</span>
+                <span className="badge bg-secondary">Tailwind CSS</span>
+                <span className="badge bg-secondary">PHP</span>
+                <span className="badge bg-secondary">Node.js</span>
+              </div>
+            </div>
 
             <div className="d-flex justify-content-center gap-3">
               <a
