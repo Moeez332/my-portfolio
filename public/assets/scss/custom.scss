@@ -459,6 +459,17 @@
   }
 
   /*==============================
+    Section Subtitle - Center Alignment
+  ===============================*/
+  .section-head {
+    .section-sub-title {
+      max-width: 100% !important;
+      justify-content: center !important;
+      width: 100% !important;
+    }
+  }
+
+  /*==============================
     FAQ Accordion - Dark Theme
   ===============================*/
   .faq-accordion {
