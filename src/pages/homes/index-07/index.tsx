@@ -1,5 +1,7 @@
+import AboutSection from "@/components/seo/AboutSection";
 import Contact from "@/components/common/Contact2";
 import Education from "@/components/common/Education2";
+import FAQSection from "@/components/seo/FAQSection";
 import Portfolio from "@/components/common/Portfolio2";
 import Services from "@/components/common/Services6";
 import Skills from "@/components/common/Skills";
@@ -57,12 +59,14 @@ export default function HomePage7() {
           <Hero />
           <TechStackMarquee />
           <Services />
+          <AboutSection />
           <Portfolio />
           <Education />
           <section id="skills">
             <Skills />
           </section>
           <Contact parentClass="get-in-touch-area tmp-section-gap" />
+          <FAQSection />
           <OnePageFooter />
         </div>
       </div>

@@ -4,8 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 import SEO from "./components/seo/SEO";
-import AboutSection from "./components/seo/AboutSection";
-import FAQSection from "./components/seo/FAQSection";
 
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
@@ -68,8 +66,6 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage7 />} />
           </Routes>
-          <AboutSection />
-          <FAQSection />
         </Suspense>
 
         <ScrollTopBehaviour />

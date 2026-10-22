@@ -55,12 +55,12 @@ export default function FAQSection() {
 
         <div className="row">
           <div className="col-lg-10 mx-auto">
-            <div className="accordion" id="faqAccordion">
+            <div className="faq-accordion accordion" id="faqAccordion">
               {faqs.map((faq, index) => (
-                <div key={index} className="accordion-item">
+                <div key={index} className="faq-accordion-item accordion-item">
                   <h2 className="accordion-header" id={`faq-heading-${index}`}>
                     <button
-                      className="accordion-button collapsed"
+                      className="faq-accordion-button accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target={`#faq-collapse-${index}`}
