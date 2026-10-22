@@ -291,6 +291,13 @@ header.header-full-width.header--sticky.sticky {
   }
 }
 
+/* Footer gap in Header3 side navbar */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /* Download CV Button - Mobile Header (MobileOnePageHeader) */
 .download-cv-btn-mobile {
   display: flex;

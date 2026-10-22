@@ -47,7 +47,14 @@ export default function Header3({
             </ul>
           </nav>
           <div className="footer">
-            <div className="social-share-style-1">
+            <a
+              className="download-cv-btn"
+              href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
+              download
+            >
+              <i className="fa-regular fa-file-pdf" /> Download CV
+            </a>
+            <div className="social-share-style-1 footer-social">
               <span className="title">Find With Me</span>
               <div className="social-link">
                 {socialLinks.map((socialLink) => (
@@ -61,13 +68,6 @@ export default function Header3({
                 ))}
               </div>
             </div>
-            <a
-              className="download-cv-btn"
-              href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
-              download
-            >
-              <i className="fa-regular fa-file-pdf" /> Download CV
-            </a>
           </div>
         </div>
       </header>
