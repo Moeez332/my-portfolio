@@ -58,7 +58,7 @@ export default function AboutSection() {
               </a>
               <a
                 href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
-                className="tmp-btn hover-icon-reverse radius-round"
+                className="tmp-btn hover-icon-reverse radius-round download-cv-btn"
                 download
               >
                 <span className="icon-reverse-wrapper">
