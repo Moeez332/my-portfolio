@@ -31,8 +31,6 @@ function App() {
         pauseOnHover
       />
       <SEO />
-      <AboutSection />
-      <FAQSection />
 
       <ErrorBoundary
         fallbackRender={({ error, resetErrorBoundary }) => (
@@ -70,6 +68,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage7 />} />
           </Routes>
+          <AboutSection />
+          <FAQSection />
         </Suspense>
 
         <ScrollTopBehaviour />

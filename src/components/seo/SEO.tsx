@@ -26,7 +26,7 @@ const SEO: React.FC<SEOProps> = ({
     "jobTitle": [
       "Senior React JS Developer",
       "Senior Frontend Developer",
-      "Senior Full Stack Wordpress Developer",
+      "Senior Full-Stack WordPress Developer",
       "UI/UX Developer",
       "WordPress Developer in Pakistan",
       "Frontend Developer in Pakistan"
@@ -100,7 +100,7 @@ const SEO: React.FC<SEOProps> = ({
     "hasCredential": {
       "@type": "EducationalOccupationalCredential",
       "credentialCategory": "Professional Certification",
-      "name": "Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer"
+      "name": "Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer"
     },
     "award": "Top Rated Frontend & WordPress Developer in Pakistan",
     "priceRange": "$$",
@@ -157,7 +157,7 @@ const SEO: React.FC<SEOProps> = ({
         "name": "Who is the best Senior React JS Developer in Pakistan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development."
+          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development."
         }
       },
       {
@@ -165,12 +165,8 @@ const SEO: React.FC<SEOProps> = ({
         "name": "Who is the best WordPress Developer in Lahore?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development."
+          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development."
         }
-      },
-      {
-        "@type": "Question",
-
       }
     ]
   };
