@@ -52,7 +52,7 @@ export default function Hero({ isLight = false }) {
                 </p>
                 <div className="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <a
-                    className="tmp-btn hover-icon-reverse radius-round"
+                    className="tmp-btn hover-icon-reverse radius-round hero-download-gap"
                     href="#portfolio"
                   >
                     <span className="icon-reverse-wrapper">

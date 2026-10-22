@@ -263,3 +263,56 @@ header.header-full-width.header--sticky.sticky {
     top: 0;
   }
 }
+
+/* Download CV Button - Side Navbar (Header3) */
+.download-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 500px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: fit-content;
+
+  i {
+    font-size: 16px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    color: #ffffff !important;
+  }
+}
+
+/* Download CV Button - Mobile Header (MobileOnePageHeader) */
+.download-cv-btn-mobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: fit-content;
+
+  i {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #6a3e9a 100%);
+    transform: translateY(-1px);
+    color: #ffffff !important;
+  }
+}
