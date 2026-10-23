@@ -99,6 +99,7 @@ const SEO: React.FC<SEOProps> = ({
     "@type": "ProfilePage",
     "url": canonical,
     "name": title,
+    "mainEntity": personSchema,
     "about": personSchema,
     "primaryImage": image,
     "inLanguage": "en-PK",
