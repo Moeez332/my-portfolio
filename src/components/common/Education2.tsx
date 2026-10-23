@@ -7,14 +7,15 @@ export default function Education() {
       <div className="container">
         <div className="section-head mb--50">
           <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <span className="subtitle">Education &amp; Experience</span>
+            <span className="subtitle">Background</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
             Education &amp; Experience
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Academic background and professional experience in frontend and
-            full-stack development.
+            A strong academic foundation in Computer Science, combined with
+            5+ years of hands-on experience building products for businesses
+            and teams.
           </p>
         </div>
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -48,7 +49,7 @@ export default function Education() {
             <div className="col-lg-6">
               <div className="experiences-wrap-left-content">
                 <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Experiences
+                  Professional Experience
                   <span>
                     <img
                       loading="lazy"

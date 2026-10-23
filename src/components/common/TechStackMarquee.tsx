@@ -5,7 +5,7 @@ export default function TechStackMarquee() {
     <section className="tech-stack-marquee" aria-label="Technology stack">
       <div className="container">
         <div className="tech-stack-marquee-heading">
-          <span>Tools I build with</span>
+          <span>Tools in my tech stack</span>
           <span className="tech-stack-marquee-line" aria-hidden="true" />
         </div>
         <div className="tech-stack-marquee-window">

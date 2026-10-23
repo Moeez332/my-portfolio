@@ -31,7 +31,7 @@ export default function Header3({
             <Link to={`/`}>
               <img
                 loading="lazy"
-                alt="Profile photo"
+                alt="Portrait of Moeez Ahmad"
                 src={profileImage}
                 width={350}
                 height={350}
@@ -47,8 +47,15 @@ export default function Header3({
             </ul>
           </nav>
           <div className="footer">
-            <div className="social-share-style-1">
-              <span className="title">Find With Me</span>
+            <a
+              className="download-cv-btn"
+              href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
+              download
+            >
+              <i className="fa-regular fa-file-pdf" /> Download Full CV
+            </a>
+            <div className="social-share-style-1 footer-social">
+              <span className="title">Connect with me</span>
               <div className="social-link">
                 {socialLinks.map((socialLink) => (
                   <a
@@ -61,13 +68,6 @@ export default function Header3({
                 ))}
               </div>
             </div>
-            <a
-              className="download-cv-btn"
-              href="/assets/files/Moeez_Ahmad_CV_Updated.pdf"
-              download
-            >
-              <i className="fa-regular fa-file-pdf" /> Download CV
-            </a>
           </div>
         </div>
       </header>

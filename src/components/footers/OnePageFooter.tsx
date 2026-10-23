@@ -1,10 +1,9 @@
 const footerSections = [
   { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
   { href: "#features", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#portfolio", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#resume", label: "Education" },
-  { href: "#skills", label: "Skills" },
   { href: "#contacts", label: "Contact" },
 ];
 
@@ -14,23 +13,25 @@ export default function OnePageFooter() {
       <div className="container">
         <div className="footer-main">
           <div className="row g-5">
-            <div className="col-lg-5 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="single-footer-wrapper border-right mr--20">
                 <p className="footer-brand-name">Moeez Ahmad</p>
                 <p className="footer-role">
-                  Let&apos;s Build Something Great Together
+                  Senior React.js &amp; WordPress Developer
                 </p>
                 <p className="footer-description">
-                  I build fast, scalable, and user-focused web applications
-                  using <strong>React.js</strong>, <strong>Next.js</strong>,{" "}
-                  <strong>WordPress</strong>, and <strong>Shopify</strong>.
-                  Whether you need a modern frontend, a custom website, or an
-                  eCommerce solution, I&apos;m here to turn your ideas into
-                  reality.
+                  Building web experiences that perform with{" "}
+                  <strong>React.js</strong>, <strong>Next.js</strong>,{" "}
+                  <strong>WordPress</strong>, and <strong>WooCommerce</strong>{" "}
+                  for startups and businesses worldwide.
+                </p>
+                <p className="footer-availability-badge">
+                  <span aria-hidden="true" />
+                  Open to remote opportunities and select freelance projects
                 </p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-2 col-md-6">
               <div className="single-footer-wrapper quick-link-wrap">
                 <h5 className="ft-title">Explore</h5>
                 <ul className="ft-link tmp-link-animation">
@@ -39,6 +40,16 @@ export default function OnePageFooter() {
                       <a href={section.href}>{section.label}</a>
                     </li>
                   ))}
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="single-footer-wrapper services-wrap">
+                <h5 className="ft-title">Services</h5>
+                <ul className="ft-link">
+                  <li>React.js &amp; Next.js Development</li>
+                  <li>WordPress &amp; WooCommerce</li>
+                  <li>Frontend &amp; API Development</li>
                 </ul>
               </div>
             </div>
@@ -56,10 +67,10 @@ export default function OnePageFooter() {
                     <a href="tel:+923117705070">+92 311 770 5070</a>
                   </li>
                 </ul>
-                <div className="social-link footer">
+                <div className="social-link footer footer-social-links">
                   <a
                     href="https://linkedin.com/in/ch-moeez-ahmad"
-                    aria-label="LinkedIn"
+                    aria-label="Connect on LinkedIn"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -83,7 +94,8 @@ export default function OnePageFooter() {
         </div>
         <div className="copyright-area-one mt-5">
           <p className="copy-right-para">
-            © {new Date().getFullYear()} Moeez Ahmad. All Rights Reserved.
+            © {new Date().getFullYear()} Moeez Ahmad. All rights reserved. ·
+            Designed &amp; developed by Moeez Ahmad.
           </p>
         </div>
       </div>

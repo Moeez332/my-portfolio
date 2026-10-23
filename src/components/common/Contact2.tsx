@@ -67,17 +67,35 @@ export default function Contact({
             <div className="row g-5 align-items-center">
               <div className="col-lg-5">
                 <div className="section-head text-align-left">
-                  <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                  <div className="section-sub-title contact-section-subtitle tmp-scroll-trigger tmp-fade-in animation-order-1">
                     <span className="subtitle">GET IN TOUCH</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    Let’s Build Something Amazing Together
+                    Let’s Build Something Great Together
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    Got a project in mind? Whether you need a custom WordPress
-                    theme, a ReactJS frontend, or a WooCommerce store, I’m here
-                    to help bring your vision to life.
+                    Whether you’re hiring for a senior frontend role, launching
+                    a product, or looking for a dependable developer, I’d love
+                    to hear what you’re building.
                   </p>
+                  <div className="contact-details">
+                    <a href="mailto:moeezahmed13@gmail.com">
+                      <i className="fa-regular fa-envelope" aria-hidden="true" />
+                      moeezahmed13@gmail.com
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/ch-moeez-ahmad"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-linkedin-in" aria-hidden="true" />
+                      Connect on LinkedIn
+                    </a>
+                    <span>
+                      <i className="fa-regular fa-location-dot" aria-hidden="true" />
+                      Lahore, Pakistan · Working remotely worldwide
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-7">
@@ -97,7 +115,7 @@ export default function Contact({
                               className="input-field"
                               name="name"
                               id="contact-name"
-                              placeholder="Your Name"
+                              placeholder="What should I call you?"
                               type="text"
                               required
                             />
@@ -109,7 +127,7 @@ export default function Contact({
                               className="input-field"
                               id="contact-phone"
                               name="phone"
-                              placeholder="Phone Number"
+                              placeholder="Phone number"
                               type="number"
                               required
                             />
@@ -121,7 +139,7 @@ export default function Contact({
                               className="input-field"
                               id="contact-email"
                               name="email"
-                              placeholder="Your Email"
+                              placeholder="Where should I reply?"
                               type="email"
                               required
                             />
@@ -135,7 +153,7 @@ export default function Contact({
                               id="subject"
                               required
                               name="subject"
-                              placeholder="Subject"
+                              placeholder="What’s this about?"
                             />
                           </div>
                         </div>
@@ -143,7 +161,7 @@ export default function Contact({
                           <div className="form-group">
                             <textarea
                               className="input-field"
-                              placeholder="Your Message"
+                              placeholder="Tell me about your project or role"
                               name="message"
                               id="contact-message"
                               required
@@ -162,7 +180,7 @@ export default function Contact({
                                 <span className="btn-text">
                                   {isSubmitting
                                     ? "Sending..."
-                                    : "Appointment Now"}
+                                    : "Send Message"}
                                 </span>
                                 <span className="btn-icon">
                                   <i className="fa-sharp fa-regular fa-arrow-right" />
@@ -173,6 +191,10 @@ export default function Contact({
                               </span>
                             </button>
                           </div>
+                          <p className="contact-trust-note">
+                            No spam—just a direct conversation about your
+                            project or role.
+                          </p>
                         </div>
                       </div>
                     </form>

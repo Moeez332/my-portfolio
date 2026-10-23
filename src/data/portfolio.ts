@@ -53,7 +53,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "HackSnak",
-    description: "Digital Solutions Consultancy Website",
+    description: "Digital consultancy website for technology and business services.",
     slug: "hacksnak",
   },
   {
@@ -63,7 +63,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Utilitybox",
-    description: "Business Energy Savings Website",
+    description: "Business energy savings website for commercial clients.",
     slug: "utilitybox",
   },
   {
@@ -73,7 +73,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Thrifty",
-    description: "Costa Rica Car Rental Website",
+    description: "Car rental website for travel in Costa Rica.",
     slug: "thrifty-costa-rica",
   },
   {
@@ -83,7 +83,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "XpertPrime",
-    description: "Business Systems & CRM Website",
+    description: "Business systems and CRM website for growing teams.",
     slug: "xpertprime",
   },
   {
@@ -93,7 +93,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Parfum.ae",
-    description: "Online Perfume Store",
+    description: "Online perfume store with a refined shopping experience.",
     slug: "parfum-ae",
   },
   {
@@ -103,7 +103,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Revive Clinic",
-    description: "Dental & Facial Aesthetics Website",
+    description: "Dental and facial aesthetics clinic website.",
     slug: "revive-clinic",
   },
   {
@@ -113,7 +113,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Luxaura Homes",
-    description: "Luxury Property Management Website",
+    description: "Luxury property management website and services.",
     slug: "luxaura-homes",
   },
   {
@@ -123,7 +123,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Restoreel",
-    description: "Restaurant Food Video Platform",
+    description: "Restaurant video platform for food discovery.",
     slug: "restoreel",
   },
   {
@@ -133,7 +133,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Live Karma Yoga",
-    description: "Community Yoga & Wellbeing Website",
+    description: "Yoga and wellbeing website for a community audience.",
     slug: "live-karma-yoga",
   },
   {
@@ -143,7 +143,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Pink Perfect Clinic",
-    description: "Aesthetics & Dermatology Website",
+    description: "Aesthetics and dermatology clinic website.",
     slug: "pink-perfect-clinic",
   },
   {
@@ -153,7 +153,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Migration Matters",
-    description: "Immigration Law Firm Website",
+    description: "Immigration law firm website for prospective clients.",
     slug: "migration-matters",
   },
   {
@@ -163,7 +163,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "B&I International",
-    description: "B2B Cookware Supplier Website",
+    description: "B2B cookware supplier website for trade customers.",
     slug: "bi-international",
   },
   {
@@ -173,7 +173,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "WhatsApp Automation",
-    description: "E-commerce Automation Platform",
+    description: "E-commerce automation platform built around WhatsApp.",
     slug: "whatsapp-automation",
   },
   {
@@ -183,7 +183,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Dollar Car Rental",
-    description: "Costa Rica Booking Website",
+    description: "Car rental booking website for Costa Rica.",
     slug: "dollar-car-rental",
   },
   {
@@ -193,7 +193,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Multitech",
-    description: "Engineering Consultancy Website",
+    description: "Engineering consultancy website for technical services.",
     slug: "multitech",
   },
   {
@@ -203,7 +203,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Lorvin Sports",
-    description: "B2B Sportswear Manufacturer Website",
+    description: "B2B sportswear manufacturer website for wholesale buyers.",
     slug: "lorvin-sports",
   },
   {
@@ -213,7 +213,7 @@ export const portfolioItems2 = [
     width: 972,
     height: 768,
     title: "Tachyon",
-    description: "AI-Powered Logistics Platform",
+    description: "AI-powered logistics platform for delivery operations.",
     slug: "tachyon",
   },
 ];

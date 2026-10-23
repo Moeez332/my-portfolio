@@ -6,6 +6,21 @@ export default function Services({
   return (
     <section className={parentClass} id="features">
       <div className="container">
+        <div className="section-head mb--50">
+          <div className="section-sub-title center-title">
+            <span className="subtitle">What I Do</span>
+          </div>
+          <h2 className="title">
+            End-to-End Web Development
+            <br />
+            That Moves Businesses Forward
+          </h2>
+          <p className="description section-sm">
+            From React interfaces to complete WordPress and e-commerce
+            solutions, I build fast, maintainable experiences designed to grow
+            with your business.
+          </p>
+        </div>
         <div className="row">
           <div className="col-lg-6 col-sm-6">
             {services2

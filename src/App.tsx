@@ -3,6 +3,8 @@ import "odometer/themes/odometer-theme-default.css"; // Import theme
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
+import SEO from "./components/seo/SEO";
+
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
@@ -26,6 +28,8 @@ function App() {
         draggable
         pauseOnHover
       />
+      <SEO />
+
       <ErrorBoundary
         fallbackRender={({ error, resetErrorBoundary }) => (
           <div
@@ -54,7 +58,9 @@ function App() {
                 role="status"
                 style={{ width: "3rem", height: "3rem" }}
               >
-                <span className="visually-hidden">Loading...</span>
+                <span className="visually-hidden">
+                  Building something great...
+                </span>
               </div>
             </div>
           }

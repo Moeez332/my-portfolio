@@ -7,11 +7,11 @@ export default function Hero({ isLight = false }) {
       <div className="container">
         <div className="banner-one-main-wrapper">
           <div className="row align-items-center">
-            <div className="col-lg-6 order-lg-2">
+            <div className="col-lg-6 order-2 order-lg-2">
               <div className="banner-right-content">
                 <img
                   className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                  alt="Moeez Ahmad"
+                  alt="Moeez Ahmad — Senior React.js and WordPress Developer in Lahore, Pakistan"
                   src="/assets/images/hero-profile.png"
                   width={542}
                   height={802}
@@ -25,8 +25,12 @@ export default function Hero({ isLight = false }) {
                 </h2>
               </div>
             </div>
-            <div className="col-lg-6 order-lg-1">
+            <div className="col-lg-6 order-1 order-lg-1">
               <div className="inner">
+                <p className="hero-availability-badge">
+                  <span aria-hidden="true" />
+                  Open to remote roles &amp; select freelance
+                </p>
                 <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                   Hello, I’m
                 </span>
@@ -36,27 +40,28 @@ export default function Hero({ isLight = false }) {
                     <span className="cd-headline clip is-full-width">
                       <TyperComponent
                         strings={[
-                          "Frontend Developer.",
                           "React.js Developer.",
-                          "WordPress Developer.",
-                          "Shopify Developer.",
+                          "Next.js Engineer.",
+                          "WordPress Expert.",
+                          "Frontend Engineer.",
+                          "Full Stack Builder.",
                         ]}
                       />
                     </span>
                   </span>
                 </h1>
                 <p className="disc tmp-scroll-trigger tmp-fade-in animation-order-3">
-                  I build responsive web applications and e-commerce
-                  experiences with React, WordPress, and Shopify for clients
-                  around the world.
+                  I design and build fast, scalable web experiences—from React
+                  frontends to custom WordPress and e-commerce solutions. 5+
+                  years of experience.
                 </p>
                 <div className="button-area-banner-one tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <a
-                    className="tmp-btn hover-icon-reverse radius-round"
+                    className="tmp-btn hover-icon-reverse radius-round hero-download-gap"
                     href="#portfolio"
                   >
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">View Portfolio</span>
+                      <span className="btn-text">View My Work</span>
                       <span className="btn-icon">
                         <i className="fa-sharp fa-regular fa-arrow-right" />
                       </span>
@@ -71,12 +76,30 @@ export default function Hero({ isLight = false }) {
                     download
                   >
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">Download CV</span>
+                      <span className="btn-text">Download Full CV</span>
                       <span className="btn-icon">
                         <i className="fa-regular fa-file-pdf" />
                       </span>
                     </span>
                   </a>
+                </div>
+                <div className="hero-proof-points" aria-label="Career highlights">
+                  <div className="hero-proof-point">
+                    <strong>5+</strong>
+                    <span>Years of experience</span>
+                  </div>
+                  <div className="hero-proof-point">
+                    <strong>50+</strong>
+                    <span>Projects shipped</span>
+                  </div>
+                  <div className="hero-proof-point">
+                    <strong>4+</strong>
+                    <span>Companies served</span>
+                  </div>
+                  <div className="hero-proof-point">
+                    <strong>Remote</strong>
+                    <span>Working remotely</span>
+                  </div>
                 </div>
               </div>
             </div>

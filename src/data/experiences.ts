@@ -29,7 +29,7 @@ export const jobExperience = [
     company: "Buckingham UK",
     location: "England (Remote)",
     description:
-      "Build and maintain customer-facing platforms and internal tools with React.js, modern JavaScript, and responsive UI design; develop Shopify storefronts and integrate e-commerce APIs.",
+      "Build customer-facing platforms and internal tools with React.js and modern JavaScript, develop Shopify storefronts, and integrate e-commerce APIs.",
   },
   {
     title: "Senior React.js / Frontend Developer",
@@ -37,21 +37,21 @@ export const jobExperience = [
     company: "Mayfair Technology Partners (MTP)",
     location: "London (Remote)",
     description:
-      "Delivered React.js SPAs and Next.js applications for UK and US clients, built reusable component libraries, and integrated REST and GraphQL APIs.",
+      "Delivered React.js and Next.js applications for UK and US clients, built reusable components, and integrated REST and GraphQL APIs.",
   },
   {
     title: "Frontend Developer (React.js)",
     duration: "June 2022 – December 2023",
     company: "Infinite Soft",
     description:
-      "Built React.js and TypeScript applications, reusable component libraries, dashboards, and responsive interfaces integrated with REST APIs.",
+      "Developed React.js and TypeScript applications, reusable components, dashboards, and responsive interfaces connected to REST APIs.",
   },
   {
     title: "WordPress Developer",
     duration: "March 2021 – May 2022",
     company: "Xeffix Technologies",
     description:
-      "Developed custom WordPress themes and plugins, optimized client websites, and managed site migrations and cPanel/WHM environments.",
+      "Created custom WordPress themes and plugins, improved client websites, and managed site migrations and cPanel/WHM environments.",
   },
 ];
 

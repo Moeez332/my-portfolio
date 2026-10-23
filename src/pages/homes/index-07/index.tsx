@@ -1,5 +1,7 @@
+import AboutSection from "@/components/seo/AboutSection";
 import Contact from "@/components/common/Contact2";
 import Education from "@/components/common/Education2";
+import FAQSection from "@/components/seo/FAQSection";
 import Portfolio from "@/components/common/Portfolio2";
 import Services from "@/components/common/Services6";
 import Skills from "@/components/common/Skills";
@@ -16,25 +18,34 @@ import MobileOnePageHeader from "@/components/headers/MobileOnePageHeader";
 import MetaComponent from "@/components/common/Metacomponent";
 
 const metadata = {
-  title: "Moeez Ahmad | WordPress, React & Full Stack Developer",
+  title: "Moeez Ahmad | Senior React, Next.js & WordPress Developer",
   description:
-    "Moeez Ahmad builds responsive React and Next.js applications, WordPress solutions, and Shopify storefronts.",
+    "Senior frontend developer with 5+ years building React.js, Next.js, and WordPress solutions for global businesses. Open to remote roles and select freelance projects.",
+  openGraphTitle: "Moeez Ahmad | React.js · Next.js · WordPress Developer",
+  openGraphDescription:
+    "I build fast, scalable web experiences with React.js, Next.js, TypeScript, and WordPress. Explore my work and let’s build something great together.",
+  keywords:
+    "Moeez Ahmad, React.js developer, Next.js developer, WordPress developer, frontend developer, WooCommerce, Shopify, TypeScript, Lahore, Pakistan",
+  publisher: "Moeez Ahmad",
+  image: "https://portfolio-moeex.vercel.app/assets/images/hero.png",
+  url: "https://portfolio-moeex.vercel.app/",
+  siteName: "Moeez Ahmad — Portfolio",
+  type: "profile",
 };
 
 const homeNavigation: OnepageNavItem[] = [
   { id: 1, href: "#home", text: "Home" },
-  { id: 2, href: "#features", text: "Services" },
-  { id: 3, href: "#portfolio", text: "Portfolio" },
-  { id: 4, href: "#experience", text: "Experience" },
-  { id: 5, href: "#resume", text: "Education" },
-  { id: 6, href: "#skills", text: "Skills" },
-  { id: 7, href: "#contacts", text: "Contact" },
+  { id: 2, href: "#about", text: "About" },
+  { id: 3, href: "#features", text: "Services" },
+  { id: 4, href: "#portfolio", text: "Projects" },
+  { id: 5, href: "#experience", text: "Experience" },
+  { id: 6, href: "#contacts", text: "Contact" },
 ];
 
 const socialLinks: ProfileSocialLink[] = [
   {
     href: "https://linkedin.com/in/ch-moeez-ahmad",
-    label: "LinkedIn",
+    label: "Connect on LinkedIn",
     icon: "fa-brands fa-linkedin-in",
   },
 ];
@@ -57,12 +68,14 @@ export default function HomePage7() {
           <Hero />
           <TechStackMarquee />
           <Services />
+          <AboutSection />
           <Portfolio />
           <Education />
           <section id="skills">
             <Skills />
           </section>
           <Contact parentClass="get-in-touch-area tmp-section-gap" />
+          <FAQSection />
           <OnePageFooter />
         </div>
       </div>
