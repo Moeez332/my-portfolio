@@ -241,6 +241,166 @@
     background-blend-mode: color, normal;
   }
 
+  .hero-availability-badge,
+  .footer-availability-badge {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: fit-content;
+    padding: 8px 13px;
+    border: 1px solid rgb(116 235 130 / 32%);
+    border-radius: 999px;
+    background: rgb(116 235 130 / 8%);
+    color: var(--color-heading);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    span {
+      width: 8px;
+      height: 8px;
+      flex: 0 0 8px;
+      border-radius: 50%;
+      background: #74eb82;
+      box-shadow: 0 0 10px rgb(116 235 130 / 55%);
+    }
+  }
+
+  .hero-availability-badge {
+    margin: 0 0 16px;
+  }
+
+  .hero-proof-points,
+  .about-achievements {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .hero-proof-points {
+    margin-top: 28px;
+  }
+
+  .hero-proof-point,
+  .about-achievement {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 3px;
+    padding: 14px 16px;
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 12px;
+    background: rgb(255 255 255 / 4%);
+    text-align: left;
+
+    strong {
+      color: var(--color-heading);
+      font-family: var(--font-primary);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    span {
+      color: var(--color-gray);
+      font-family: var(--font-secondary);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+  }
+
+  .hero-proof-point {
+    strong {
+      background: var(--primary-gradient);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .about-achievements {
+    margin: 0 0 30px;
+  }
+
+  .about-achievement {
+    align-items: center;
+    padding: 16px 12px;
+    text-align: center;
+
+    strong {
+      background: var(--primary-gradient);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 30px;
+    }
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+
+    a,
+    span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-heading);
+      font-family: var(--font-secondary);
+      font-size: 14px;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #74eb82;
+    }
+
+    i {
+      width: 16px;
+      color: #74eb82;
+      text-align: center;
+    }
+  }
+
+  .contact-trust-note {
+    margin: 14px 0 0;
+    color: var(--color-gray);
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .footer-availability-badge {
+    margin: 24px 0 0;
+  }
+
+  .footer-social-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .contact-section-subtitle {
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+
+  .one-page-footer {
+    .quick-link-wrap {
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    .services-wrap {
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  }
+
   .tech-stack-logo {
     display: inline-flex;
     width: 30px;
@@ -387,6 +547,37 @@
   }
 
   @media (max-width: 575px) {
+    .hero-proof-points,
+    .about-achievements {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .hero-proof-point,
+    .about-achievement {
+      padding: 12px 9px;
+    }
+
+    .hero-proof-point {
+      strong {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 11px;
+      }
+    }
+
+    .about-achievement {
+      strong {
+        font-size: 24px;
+      }
+
+      span {
+        font-size: 11px;
+      }
+    }
+
     .tech-stack-marquee {
       padding: 24px 0;
     }
@@ -462,7 +653,7 @@
     Section Subtitle - Center Alignment
   ===============================*/
   .section-head {
-    .section-sub-title {
+    .section-sub-title:not(.contact-section-subtitle) {
       max-width: 100% !important;
       justify-content: center !important;
       width: 100% !important;

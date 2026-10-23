@@ -1,36 +1,28 @@
 export default function FAQSection() {
   const faqs = [
     {
-      question: "Why should I hire you?",
-      answer: "I am a Senior React JS Developer and WordPress Expert with deep experience in building high-performance, scalable web applications and e-commerce stores. I deliver pixel-perfect, SEO-friendly, and conversion-optimized digital products for clients worldwide.",
-    },
-    {
       question: "What technologies do you specialize in?",
-      answer: "I specialize in React JS, Next.js, TypeScript, JavaScript, WordPress, WooCommerce, Shopify, Tailwind CSS, PHP, and Node.js. I build modern, responsive, and performance-optimized websites and web applications.",
+      answer: "My core stack includes React.js, Next.js, TypeScript, and WordPress. I also work with Node.js, Express.js, PHP, MySQL, MongoDB, Tailwind CSS, WooCommerce, and Shopify.",
     },
     {
-      question: "Do you build custom WordPress websites?",
-      answer: "Yes, I develop custom WordPress themes and plugins tailored to your business needs. From theme engineering to WooCommerce solutions, I deliver secure, scalable, and SEO-friendly WordPress websites.",
+      question: "Are you available for full-time remote roles?",
+      answer: "I’m open to senior frontend and full-stack remote opportunities, and I’m comfortable collaborating with distributed teams across time zones.",
     },
     {
-      question: "Can you develop Shopify stores?",
-      answer: "Yes, I build and customize Shopify stores with responsive design, performance optimization, and seamless user experience to help you sell more online.",
+      question: "Do you take on freelance or contract projects?",
+      answer: "Selectively, yes. I consider React.js, Next.js, WordPress, and WooCommerce projects that align with my experience and availability.",
     },
     {
-      question: "Do you build React and Next.js applications?",
-      answer: "Absolutely. I build modern React JS and Next.js applications with TypeScript, focusing on performance, responsiveness, and SEO-friendly architecture for a great user experience.",
+      question: "How do you manage communication and deadlines?",
+      answer: "I agree on clear milestones, share regular progress updates, and use collaborative workflows to keep work visible and delivery on track.",
     },
     {
-      question: "Are you available for freelance projects?",
-      answer: "Yes, I am available for freelance projects. Feel free to reach out with your requirements, and let's discuss how I can help bring your vision to life.",
+      question: "Can you join an existing codebase or team?",
+      answer: "Yes. I can contribute to existing React and WordPress projects, follow established Git and review practices, and work closely with your team.",
     },
     {
-      question: "Do you work with international clients?",
-      answer: "Yes, I work with clients worldwide. Communication and collaboration are handled remotely through email, video calls, and project management tools.",
-    },
-    {
-      question: "Can you optimize website performance?",
-      answer: "Yes, I specialize in performance optimization including Core Web Vitals improvement, code optimization, image compression, and caching strategies to make your website load faster.",
+      question: "Do you provide post-launch support?",
+      answer: "I can help with ongoing WordPress maintenance, security and plugin updates, and performance checks, as well as React and Next.js fixes and feature improvements.",
     },
   ];
 
@@ -47,7 +39,7 @@ export default function FAQSection() {
                 Frequently Asked Questions
               </h2>
               <p className="description">
-                Everything you need to know before hiring me.
+                Quick answers for clients and recruiters considering a collaboration.
               </p>
             </div>
           </div>

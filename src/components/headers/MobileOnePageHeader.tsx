@@ -67,7 +67,7 @@ export default function MobileOnePageHeader({
                 download
                 onClick={() => setIsOpen(false)}
               >
-                <i className="fa-regular fa-file-pdf me-2" /> Download CV
+                <i className="fa-regular fa-file-pdf me-2" /> Download Full CV
               </a>
             </li>
           </ul>

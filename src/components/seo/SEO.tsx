@@ -5,55 +5,52 @@ interface SEOProps {
   description?: string;
   canonical?: string;
   image?: string;
-  type?: "website" | "profile";
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Moeez Ahmad | Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer in Lahore, Pakistan",
-  description = "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full Stack Wordpress Developer based in Lahore, Pakistan. Expert in custom WordPress theme & plugin engineering, WooCommerce solutions, React.js, Next.js, PHP, TypeScript, JavaScript, and Tailwind CSS.",
+  title = "Moeez Ahmad | Senior React, Next.js & WordPress Developer",
+  description = "Senior frontend developer with 5+ years building React.js, Next.js, and WordPress solutions for global businesses. Open to remote roles and select freelance projects.",
   canonical = "https://portfolio-moeex.vercel.app/",
   image = "https://portfolio-moeex.vercel.app/assets/images/hero.png",
-  type = "profile",
 }) => {
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Moeez Ahmad",
-    "alternateName": ["Moeez", "Moeez Ahmad Dev"],
     "url": canonical,
     "image": image,
-    "jobTitle": [
-      "Senior React JS Developer",
-      "Senior Frontend Developer",
-      "Senior Full-Stack WordPress Developer",
-      "UI/UX Developer",
-      "WordPress Developer in Pakistan",
-      "Frontend Developer in Pakistan"
-    ],
+    "jobTitle": "Senior Frontend Developer",
+    "description": description,
     "worksFor": {
       "@type": "Organization",
-      "name": "Freelance / Self-Employed",
-      "url": "https://portfolio-moeex.vercel.app/",
-      "sameAs": [
-        "https://linkedin.com/in/moeez-ahmad",
-        "https://github.com/Moeez332",
-        "https://twitter.com/moeezdev"
-      ]
+      "name": "Buckingham UK"
     },
     "knowsAbout": [
-      "Custom WordPress Theme Development",
-      "Custom WordPress Plugin Engineering",
-      "WooCommerce Solutions",
-      "React.js Development",
-      "Next.js Development",
-      "PHP Development",
-      "TypeScript Development",
-      "JavaScript Development",
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "WordPress",
+      "Custom WordPress Themes",
+      "WordPress Plugins",
+      "WooCommerce",
+      "Shopify",
+      "PHP",
+      "Node.js",
       "Tailwind CSS",
-      "UI/UX Design",
       "Frontend Development",
-      "WordPress Development"
+      "E-commerce Development"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Superior University Lahore"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "GC University Faisalabad"
+      }
     ],
     "knowsLanguage": [
       {
@@ -92,19 +89,9 @@ const SEO: React.FC<SEOProps> = ({
       }
     ],
     "sameAs": [
-      "https://linkedin.com/in/moeez-ahmad",
-      "https://github.com/Moeez332",
-      "https://twitter.com/moeezdev",
+      "https://linkedin.com/in/ch-moeez-ahmad",
       canonical
     ],
-    "hasCredential": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Professional Certification",
-      "name": "Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer"
-    },
-    "award": "Top Rated Frontend & WordPress Developer in Pakistan",
-    "priceRange": "$$",
-    "additionalType": type
   };
 
   const profilePageSchema = {
@@ -118,12 +105,7 @@ const SEO: React.FC<SEOProps> = ({
     "isPartOf": {
       "@type": "WebSite",
       "url": "https://portfolio-moeex.vercel.app/",
-      "name": "Moeez Ahmad Portfolio",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://portfolio-moeex.vercel.app/search?q={search_string}",
-        "query-input": "required name=search_string"
-      }
+      "name": "Moeez Ahmad Portfolio"
     }
   };
 
@@ -132,15 +114,9 @@ const SEO: React.FC<SEOProps> = ({
     "@type": "WebSite",
     "url": canonical,
     "name": title,
-    "alternateName": "Moeez Ahmad Developer",
     "description": description,
     "inLanguage": "en-PK",
     "isFamilyFriendly": true,
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://portfolio-moeex.vercel.app/search?q={search_string}",
-        "query-input": "required name=search_string"
-    },
     "publisher": {
       "@type": "Person",
       "name": "Moeez Ahmad",
@@ -154,18 +130,50 @@ const SEO: React.FC<SEOProps> = ({
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Who is the best Senior React JS Developer in Pakistan?",
+        "name": "What technologies do you specialize in?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer based in Lahore, Pakistan, specializing in React.js, Next.js, and custom WordPress development."
+          "text": "My core stack includes React.js, Next.js, TypeScript, and WordPress. I also work with Node.js, Express.js, PHP, MySQL, MongoDB, Tailwind CSS, WooCommerce, and Shopify."
         }
       },
       {
         "@type": "Question",
-        "name": "Who is the best WordPress Developer in Lahore?",
+        "name": "Are you available for full-time remote roles?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moeez Ahmad is a Senior React JS Developer, Senior Frontend Developer & Senior Full-Stack WordPress Developer in Lahore, Pakistan, expert in custom theme and plugin engineering, WooCommerce solutions, and web development."
+          "text": "I’m open to senior frontend and full-stack remote opportunities, and I’m comfortable collaborating with distributed teams across time zones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you take on freelance or contract projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Selectively, yes. I consider React.js, Next.js, WordPress, and WooCommerce projects that align with my experience and availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you manage communication and deadlines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I agree on clear milestones, share regular progress updates, and use collaborative workflows to keep work visible and delivery on track."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you join an existing codebase or team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. I can contribute to existing React and WordPress projects, follow established Git and review practices, and work closely with your team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide post-launch support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I can help with ongoing WordPress maintenance, security and plugin updates, and performance checks, as well as React and Next.js fixes and feature improvements."
         }
       }
     ]

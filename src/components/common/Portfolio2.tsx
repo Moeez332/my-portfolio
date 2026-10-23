@@ -26,8 +26,9 @@ export default function Portfolio() {
             for Ambitious Businesses
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            A selection of digital projects across commerce, business systems,
-            hospitality, and healthcare.
+            A curated selection of websites and platforms for commerce,
+            business systems, hospitality, and healthcare—built to support
+            real business needs.
           </p>
         </div>
         <div aria-live="polite" aria-label="Portfolio projects">
@@ -43,7 +44,7 @@ export default function Portfolio() {
                         loading="lazy"
                         decoding="async"
                         className="w-100 tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                        alt={item.title}
+                        alt={`${item.title}: ${item.description}`}
                         src={item.imageSrc}
                         width={item.width}
                         height={item.height}
