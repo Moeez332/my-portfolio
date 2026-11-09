@@ -79,11 +79,15 @@ export default function Contact({
                     to hear what you’re building.
                   </p>
                   <div className="contact-details">
-                    <a href="mailto:moeezahmed13@gmail.com">
+                    <a
+                      className="tmp-scroll-trigger tmp-fade-in animation-order-1"
+                      href="mailto:moeezahmed13@gmail.com"
+                    >
                       <i className="fa-regular fa-envelope" aria-hidden="true" />
                       moeezahmed13@gmail.com
                     </a>
                     <a
+                      className="tmp-scroll-trigger tmp-fade-in animation-order-2"
                       href="https://linkedin.com/in/ch-moeez-ahmad"
                       target="_blank"
                       rel="noreferrer"
@@ -91,7 +95,7 @@ export default function Contact({
                       <i className="fa-brands fa-linkedin-in" aria-hidden="true" />
                       Connect on LinkedIn
                     </a>
-                    <span>
+                    <span className="tmp-scroll-trigger tmp-fade-in animation-order-3">
                       <i className="fa-regular fa-location-dot" aria-hidden="true" />
                       Lahore, Pakistan · Working remotely worldwide
                     </span>
@@ -110,7 +114,7 @@ export default function Contact({
                     >
                       <div className="contact-form-wrapper row">
                         <div className="col-lg-6">
-                          <div className="form-group">
+                          <div className="form-group tmp-scroll-trigger tmp-fade-in animation-order-1">
                             <input
                               className="input-field"
                               name="name"
@@ -122,7 +126,7 @@ export default function Contact({
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="form-group">
+                          <div className="form-group tmp-scroll-trigger tmp-fade-in animation-order-2">
                             <input
                               className="input-field"
                               id="contact-phone"
@@ -134,7 +138,7 @@ export default function Contact({
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="form-group">
+                          <div className="form-group tmp-scroll-trigger tmp-fade-in animation-order-3">
                             <input
                               className="input-field"
                               id="contact-email"
@@ -146,7 +150,7 @@ export default function Contact({
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="form-group">
+                          <div className="form-group tmp-scroll-trigger tmp-fade-in animation-order-4">
                             <input
                               className="input-field"
                               type="text"
@@ -158,7 +162,7 @@ export default function Contact({
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <div className="form-group">
+                          <div className="form-group tmp-scroll-trigger tmp-fade-in animation-order-1">
                             <textarea
                               className="input-field"
                               placeholder="Tell me about your project or role"
@@ -172,7 +176,7 @@ export default function Contact({
                         <div className="col-lg-12">
                           <div className="tmp-button-here">
                             <button
-                              className="tmp-btn hover-icon-reverse radius-round w-100"
+                              className="tmp-btn hover-icon-reverse radius-round w-100 tmp-scroll-trigger tmp-fade-in animation-order-2"
                               type="submit"
                               disabled={isSubmitting}
                             >
@@ -191,7 +195,7 @@ export default function Contact({
                               </span>
                             </button>
                           </div>
-                          <p className="contact-trust-note">
+                          <p className="contact-trust-note tmp-scroll-trigger tmp-fade-in animation-order-3">
                             No spam—just a direct conversation about your
                             project or role.
                           </p>

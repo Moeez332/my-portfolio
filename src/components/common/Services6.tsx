@@ -7,15 +7,15 @@ export default function Services({
     <section className={parentClass} id="features">
       <div className="container">
         <div className="section-head mb--50">
-          <div className="section-sub-title center-title">
+          <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
             <span className="subtitle">What I Do</span>
           </div>
-          <h2 className="title">
+          <h2 className="title tmp-scroll-trigger tmp-fade-in animation-order-2">
             End-to-End Web Development
             <br />
             That Moves Businesses Forward
           </h2>
-          <p className="description section-sm">
+          <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
             From React interfaces to complete WordPress and e-commerce
             solutions, I build fast, maintainable experiences designed to grow
             with your business.
@@ -30,11 +30,13 @@ export default function Services({
                   className={`service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${service.animationOrder}`}
                   key={service.id}
                 >
-                  <h2 className="service-card-num">
+                  <h2 className="service-card-num tmp-scroll-trigger tmp-fade-in animation-order-1">
                     <span>{service.num}</span>
                     {service.title}
                   </h2>
-                  <p className="service-para">{service.description}</p>
+                  <p className="service-para tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    {service.description}
+                  </p>
                 </div>
               )}
           </div>
@@ -48,11 +50,13 @@ export default function Services({
                   className={`service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${service.animationOrder}`}
                   key={service.id}
                 >
-                  <h2 className="service-card-num">
+                  <h2 className="service-card-num tmp-scroll-trigger tmp-fade-in animation-order-1">
                     <span>{service.num}</span>
                     {service.title}
                   </h2>
-                  <p className="service-para">{service.description}</p>
+                  <p className="service-para tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    {service.description}
+                  </p>
                 </div>
               )}
           </div>

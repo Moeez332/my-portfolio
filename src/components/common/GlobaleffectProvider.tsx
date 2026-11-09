@@ -23,6 +23,8 @@ export default function GlobaleffectProvider() {
 
     const scrollObservers: IntersectionObserver[] = [];
     const zoomScrollHandlers: (() => void)[] = [];
+    const observedScrollElements = new WeakSet<HTMLElement>();
+    const scrollAnimationElements = new Set<HTMLElement>();
 
     // Intersection handler for scroll-triggered elements
     function onIntersection(
@@ -47,13 +49,30 @@ export default function GlobaleffectProvider() {
       });
     }
 
+    const scrollAnimationObserver = new IntersectionObserver(onIntersection, {
+      rootMargin: "0px 0px -50px 0px",
+    });
+    scrollObservers.push(scrollAnimationObserver);
+
+    const handleScrollAnimationEnd = (event: AnimationEvent) => {
+      if (event.target !== event.currentTarget) return;
+
+      const target = event.currentTarget as HTMLElement;
+      window.setTimeout(() => target.setAttribute("animation-end", ""), 1000);
+    };
+
     function initializeScrollAnimationTrigger(
       rootEl: Document | HTMLElement = document,
       isDesignModeEvent: boolean = false
     ) {
-      const elements = rootEl.querySelectorAll<HTMLElement>(
+      const descendants = rootEl.querySelectorAll<HTMLElement>(
         `.${RBT_SCROLL_ACTIVATION}`
       );
+      const elements =
+        rootEl instanceof HTMLElement &&
+        rootEl.matches(`.${RBT_SCROLL_ACTIVATION}`)
+          ? [rootEl, ...Array.from(descendants)]
+          : Array.from(descendants);
       if (elements.length === 0) return;
 
       if (isDesignModeEvent) {
@@ -63,12 +82,14 @@ export default function GlobaleffectProvider() {
         return;
       }
 
-      const observer = new IntersectionObserver(onIntersection, {
-        rootMargin: "0px 0px -50px 0px",
+      elements.forEach((el) => {
+        if (observedScrollElements.has(el)) return;
+        observedScrollElements.add(el);
+        el.addEventListener("animationend", handleScrollAnimationEnd);
+        scrollAnimationElements.add(el);
+        el.classList.add(RBT_SCROLL_OFFSCREEN_ACTIVATION);
+        scrollAnimationObserver.observe(el);
       });
-
-      elements.forEach((el) => observer.observe(el));
-      scrollObservers.push(observer);
     }
 
     function percentageSeen(element: Element): number {
@@ -147,10 +168,29 @@ export default function GlobaleffectProvider() {
       .forEach((el) => el.classList.remove("opacity-0"));
 
     initializeScrollAnimationTrigger();
+
+    const scrollAnimationMutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof HTMLElement) {
+            initializeScrollAnimationTrigger(node);
+          }
+        });
+      });
+    });
+    scrollAnimationMutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
     initializeScrollZoomAnimationTrigger();
 
     return () => {
+      scrollAnimationMutationObserver.disconnect();
       scrollObservers.forEach((observer) => observer.disconnect());
+      scrollAnimationElements.forEach((el) =>
+        el.removeEventListener("animationend", handleScrollAnimationEnd)
+      );
       zoomScrollHandlers.forEach((removeFn) => removeFn());
     };
   }, [pathname]);
@@ -264,32 +304,6 @@ export default function GlobaleffectProvider() {
           "mousemove",
           handleCardMouseMove as EventListener
         );
-      });
-    };
-  }, [pathname]);
-
-  useEffect(() => {
-    const animates = document.querySelectorAll<HTMLElement>(
-      ".tmp-scroll-trigger"
-    );
-    if (animates.length === 0) return;
-
-    const handleAnimationEnd = (e: AnimationEvent) => {
-      const target = e.target as HTMLElement;
-      if (target) {
-        setTimeout(() => {
-          target.setAttribute("animation-end", "");
-        }, 1000);
-      }
-    };
-
-    animates.forEach((el) => {
-      el.addEventListener("animationend", handleAnimationEnd);
-    });
-
-    return () => {
-      animates.forEach((el) => {
-        el.removeEventListener("animationend", handleAnimationEnd);
       });
     };
   }, [pathname]);

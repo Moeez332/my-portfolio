@@ -32,13 +32,13 @@ export default function FAQSection() {
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center mb-5">
             <div className="section-head">
-              <div className="section-sub-title">
+              <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                 <span className="subtitle">FAQ</span>
               </div>
-              <h2 id="faq-heading" className="title mb-4">
+              <h2 id="faq-heading" className="title mb-4 tmp-scroll-trigger tmp-fade-in animation-order-2">
                 Frequently Asked Questions
               </h2>
-              <p className="description">
+              <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
                 Quick answers for clients and recruiters considering a collaboration.
               </p>
             </div>
@@ -49,8 +49,14 @@ export default function FAQSection() {
           <div className="col-lg-10 mx-auto">
             <div className="faq-accordion accordion" id="faqAccordion">
               {faqs.map((faq, index) => (
-                <div key={index} className="faq-accordion-item accordion-item">
-                  <h2 className="accordion-header" id={`faq-heading-${index}`}>
+                <div
+                  key={index}
+                  className={`faq-accordion-item accordion-item tmp-scroll-trigger tmp-fade-in animation-order-${(index % 4) + 1}`}
+                >
+                  <h2
+                    className={`accordion-header tmp-scroll-trigger tmp-fade-in animation-order-${(index % 4) + 1}`}
+                    id={`faq-heading-${index}`}
+                  >
                     <button
                       className="faq-accordion-button accordion-button collapsed"
                       type="button"
@@ -68,7 +74,7 @@ export default function FAQSection() {
                     data-bs-parent="#faqAccordion"
                     aria-labelledby={`faq-heading-${index}`}
                   >
-                    <div className="accordion-body">
+                    <div className="accordion-body tmp-scroll-trigger tmp-fade-in animation-order-2">
                       {faq.answer}
                     </div>
                   </div>

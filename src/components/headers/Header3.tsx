@@ -55,7 +55,9 @@ export default function Header3({
               <i className="fa-regular fa-file-pdf" /> Download Full CV
             </a>
             <div className="social-share-style-1 footer-social">
-              <span className="title">Connect with me</span>
+              <span className="title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                Connect with me
+              </span>
               <div className="social-link">
                 {socialLinks.map((socialLink) => (
                   <a

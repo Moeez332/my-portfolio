@@ -18,16 +18,20 @@ export default function Hero({ isLight = false }) {
                   fetchPriority="high"
                 />
                 <h2 className="banner-big-text-1 up-down">
-                  FRONTEND DEVELOPER
+                  <span className="tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    FRONTEND DEVELOPER
+                  </span>
                 </h2>
                 <h2 className="banner-big-text-2 up-down-2">
-                  REACT.JS &amp; NEXT.JS
+                  <span className="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    REACT.JS &amp; NEXT.JS
+                  </span>
                 </h2>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-1">
               <div className="inner">
-                <p className="hero-availability-badge">
+                <p className="hero-availability-badge tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <span aria-hidden="true" />
                   Open to remote roles &amp; select freelance
                 </p>
