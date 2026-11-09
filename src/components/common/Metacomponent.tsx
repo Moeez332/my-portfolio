@@ -4,6 +4,8 @@ type MetaProps = {
   meta: {
     title: string;
     description?: string;
+    openGraphTitle?: string;
+    openGraphDescription?: string;
     image?: string;
     url?: string;
     type?: string;
@@ -44,8 +46,11 @@ export default function MetaComponent({ meta }: MetaProps) {
     setMeta({ property: "og:type", content: meta.type ?? "website" });
     setMeta({ property: "og:url", content: meta.url ?? "https://portfolio-moeex.vercel.app/" });
     setMeta({ property: "og:site_name", content: meta.siteName ?? "Moeez Ahmad Portfolio" });
-    setMeta({ property: "og:title", content: meta.title });
-    setMeta({ property: "og:description", content: meta.description ?? "" });
+    setMeta({ property: "og:title", content: meta.openGraphTitle ?? meta.title });
+    setMeta({
+      property: "og:description",
+      content: meta.openGraphDescription ?? meta.description ?? "",
+    });
     setMeta({ property: "og:image", content: meta.image ?? "/assets/images/hero.png" });
 
     setMeta({ name: "twitter:card", content: "summary_large_image" });
@@ -63,6 +68,8 @@ export default function MetaComponent({ meta }: MetaProps) {
   }, [
     meta.title,
     meta.description,
+    meta.openGraphTitle,
+    meta.openGraphDescription,
     meta.image,
     meta.url,
     meta.type,

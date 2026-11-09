@@ -42,7 +42,7 @@ export const services2 = [
     num: "01.",
     title: "Frontend Development",
     description:
-      "ReactJS, Tailwind CSS, Bootstrap, jQuery, and Material UI for building responsive, modern, and mobile-first user interfaces.",
+      "I build responsive, accessible frontends with React.js, Next.js, and TypeScript, with careful attention to usability, cross-browser support, and Core Web Vitals.",
     animationOrder: "1",
     isLink: true,
     column: 1,
@@ -52,7 +52,7 @@ export const services2 = [
     num: "02.",
     title: "Backend & API Development",
     description:
-      "Node.js, Express.js, RESTful API architecture, JWT/OAuth authentication, and third-party API integrations for secure web applications.",
+      "I build maintainable REST APIs and backend features with Node.js, Express.js, and PHP, and connect applications with third-party services.",
     animationOrder: "2",
     isLink: true,
     column: 1,
@@ -62,7 +62,7 @@ export const services2 = [
     num: "03.",
     title: "WordPress Development",
     description:
-      "Custom theme development, plugin development, Elementor Pro, WooCommerce, ACF, CPT UI, and Yoast SEO for scalable WordPress websites.",
+      "I create custom WordPress themes, plugins, and headless CMS solutions, using tools such as ACF and WooCommerce to fit your content and business needs.",
     animationOrder: "3",
     isLink: true,
     column: 1,
@@ -72,7 +72,7 @@ export const services2 = [
     num: "04.",
     title: "E-Commerce Solutions",
     description:
-      "WooCommerce stores with product configurators, payment gateway integrations, and checkout flow optimisation to maximise conversion rates.",
+      "I build WooCommerce and Shopify storefronts with payment integrations, clear product journeys, and considered checkout improvements.",
     animationOrder: "4",
     isLink: false,
     column: 2,
@@ -82,7 +82,7 @@ export const services2 = [
     num: "05.",
     title: "Performance & SEO",
     description:
-      "Core Web Vitals optimisation, caching (WP Rocket, W3 Total Cache), image compression, lazy loading, and Schema Markup implementation.",
+      "I improve site speed and search readiness through Core Web Vitals reviews, code splitting, caching, image optimization, and structured data.",
     animationOrder: "5",
     isLink: false,
     column: 2,
@@ -92,7 +92,7 @@ export const services2 = [
     num: "06.",
     title: "Security & Hosting",
     description:
-      "WordPress security hardening, SSL/HTTPS, cPanel/WHM management, DNS configuration, malware removal, and live site migrations.",
+      "I configure SSL, cPanel and WHM, DNS, and backups, and help secure, maintain, and migrate WordPress websites.",
     animationOrder: "6",
     isLink: false,
     column: 2,

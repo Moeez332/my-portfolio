@@ -4,7 +4,7 @@ export const educationExperienceData = [
     duration: "2019 – 2021",
     institute: "Superior University, Lahore",
     description:
-      "Advanced studies in Computer Science with a focus on Software Engineering, Web Technologies, Programming Fundamentals, Object-Oriented Programming (OOP), Data Structures and Algorithms, and Distributed Network Systems.",
+      "Focused on software engineering, database systems, and web technologies, building the academic foundation behind my engineering approach.",
     animationOrder: 1,
   },
   {
@@ -12,7 +12,7 @@ export const educationExperienceData = [
     duration: "2017 – 2019",
     institute: "GC University, Faisalabad",
     description:
-      "Foundation in programming, data structures, algorithms, and web development fundamentals.",
+      "Built a strong foundation in programming, algorithms, data structures, and object-oriented design.",
     animationOrder: 2,
   },
 ];

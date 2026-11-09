@@ -7,14 +7,15 @@ export default function Education() {
       <div className="container">
         <div className="section-head mb--50">
           <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <span className="subtitle">Education &amp; Experience</span>
+            <span className="subtitle">Background</span>
           </div>
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
             Education &amp; Experience
           </h2>
           <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Academic background and professional experience in frontend and
-            full-stack development.
+            A strong academic foundation in Computer Science, combined with
+            5+ years of hands-on experience building products for businesses
+            and teams.
           </p>
         </div>
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -35,10 +36,18 @@ export default function Education() {
               <div
                 className={`education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${item.animationOrder}`}
               >
-                <h4 className="edu-sub-title">{item.institute}</h4>
-                <h2 className="edu-title">{item.role}</h2>
-                <p className="edu-duration">{item.duration}</p>
-                <p className="edu-para">{item.description}</p>
+                <h4 className="edu-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                  {item.institute}
+                </h4>
+                <h2 className="edu-title tmp-scroll-trigger tmp-fade-in animation-order-2">
+                  {item.role}
+                </h2>
+                <p className="edu-duration tmp-scroll-trigger tmp-fade-in animation-order-3">
+                  {item.duration}
+                </p>
+                <p className="edu-para tmp-scroll-trigger tmp-fade-in animation-order-4">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
@@ -48,7 +57,7 @@ export default function Education() {
             <div className="col-lg-6">
               <div className="experiences-wrap-left-content">
                 <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Experiences
+                  Professional Experience
                   <span>
                     <img
                       loading="lazy"
@@ -64,13 +73,19 @@ export default function Education() {
                     className={`experience-content tmp-scroll-trigger tmp-fade-in animation-order-${index + 1}`}
                     key={index}
                   >
-                    <p className="ex-subtitle">{item.duration}</p>
-                    <h2 className="ex-name">{item.title}</h2>
-                    <h3 className="ex-title">
+                    <p className="ex-subtitle tmp-scroll-trigger tmp-fade-in animation-order-1">
+                      {item.duration}
+                    </p>
+                    <h2 className="ex-name tmp-scroll-trigger tmp-fade-in animation-order-2">
+                      {item.title}
+                    </h2>
+                    <h3 className="ex-title tmp-scroll-trigger tmp-fade-in animation-order-3">
                       {item.company}
                       {item.location && ` – ${item.location}`}
                     </h3>
-                    <p className="ex-para">{item.description}</p>
+                    <p className="ex-para tmp-scroll-trigger tmp-fade-in animation-order-4">
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>

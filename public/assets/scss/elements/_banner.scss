@@ -421,6 +421,19 @@
       margin-top: 39px;
       position: relative;
       z-index: 2;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .tmp-btn {
+        min-width: 210px;
+        text-align: center;
+      }
+
+      .hero-download-gap {
+        margin-right: 15px;
+      }
     }
   }
 

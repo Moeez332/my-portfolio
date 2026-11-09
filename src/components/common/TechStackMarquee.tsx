@@ -5,7 +5,9 @@ export default function TechStackMarquee() {
     <section className="tech-stack-marquee" aria-label="Technology stack">
       <div className="container">
         <div className="tech-stack-marquee-heading">
-          <span>Tools I build with</span>
+          <span className="tmp-scroll-trigger tmp-fade-in animation-order-1">
+            Tools in my tech stack
+          </span>
           <span className="tech-stack-marquee-line" aria-hidden="true" />
         </div>
         <div className="tech-stack-marquee-window">
@@ -16,9 +18,9 @@ export default function TechStackMarquee() {
                 key={copy}
                 aria-hidden={copy === 1}
               >
-                {techStack.map((technology) => (
+                {techStack.map((technology, index) => (
                   <div
-                    className="tech-stack-marquee-item"
+                    className={`tech-stack-marquee-item tmp-scroll-trigger tmp-fade-in animation-order-${(index % 4) + 1}`}
                     key={technology.name}
                   >
                     <span
